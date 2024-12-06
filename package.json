@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.1",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0",
+    "prettier": "^3.4.1",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0"
+  },
+  "scripts": {
+    "test:chrome": "npx playwright test --project=chromium --headed"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}

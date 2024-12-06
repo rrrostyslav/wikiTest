@@ -1,0 +1,11 @@
+services:
+  playwright_tests:
+    image: mcr.microsoft.com/playwright:v1.49.0-jammy
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./Docker_reports:/app/test-results
+      - ./Docker_reports:/app/playwright-report
